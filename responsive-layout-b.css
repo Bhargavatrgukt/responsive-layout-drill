@@ -1,0 +1,97 @@
+.header{
+    background-color:#b4b8bf;
+    width:100vw;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+
+.main-container{
+  display: flex;
+
+}
+
+.sectionA{
+    background-color:#98d27a ;
+    height: 80vh;
+    width:60vw;
+    order: 1;
+}
+
+.sectionB{
+    background-color:#388e3c ;
+    height: 80vh;
+    width:20vw;
+}
+
+.sectionC{
+    background-color: #fdd835;
+    height:80vh;
+    width: 20vw;
+    order: 2;
+}
+
+
+.footer{
+    background-color:#b4b8bf;
+    width:100vw;
+    height: 10vh;
+    margin-top: 10px;
+
+}
+
+
+.median-screens{
+    display: none;
+}
+
+@media screen and  (max-width: 990px){
+    .main-container{
+        display: none;
+    }
+    .median-screens{
+        display:block;
+    }
+    .req-lay{
+        display: flex;
+    }
+    .sectionA{
+      width: 100vw;
+      height: 50vh;
+    }
+    .sectionB{
+     width: 50vw;
+     height:30vh;
+    }
+    .sectionC{
+        width: 50vw;
+        height:30vh;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .main-container{
+        display: none;
+    }
+    .median-screens{
+        display:block;
+    }
+    .req-lay{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionA{
+      width: 100vw;
+      height: 50vh;
+    }
+    .sectionB{
+     width: 100vw;
+     height:15vh;
+    }
+    .sectionC{
+        width: 100vw;
+        height:15vh;
+    }
+ 
+}
